@@ -1,26 +1,78 @@
 @import "tailwindcss";
+@plugin "tailwindcss-animate";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fdfbf7;
+  /* Off-white paper color */
+  --foreground: #000000;
+
+  --primary: #FF5E5E;
+  /* Vibrant Red */
+  --secondary: #5E9DFF;
+  /* Vibrant Blue */
+  --accent: #FFD93D;
+  /* Vibrant Yellow */
+  --muted: #e5e5e5;
+
+  --border-width: 3px;
+  --shadow-length: 4px;
 }
 
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: 'Inter', sans-serif;
+
+  --shadow-neo: 4px 4px 0px 0px #000000;
+  --shadow-neo-sm: 2px 2px 0px 0px #000000;
+  --shadow-neo-lg: 8px 8px 0px 0px #000000;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  min-height: 100vh;
+}
+
+/* Custom Neobrutalism Utilities */
+/* Custom Neobrutalism Utilities */
+.neo-border {
+  border: 3px solid #000000;
+}
+
+.neo-shadow {
+  box-shadow: 4px 4px 0px 0px #000000;
+}
+
+.neo-input {
+  @apply w-full p-3 font-bold bg-white focus:outline-none transition-all;
+  border: 3px solid #000000;
+  box-shadow: var(--shadow-neo);
+}
+
+.neo-input:focus {
+  transform: translate(2px, 2px);
+  box-shadow: var(--shadow-neo-sm);
+}
+
+.neo-button {
+  @apply bg-primary text-white font-black px-6 py-3 transition-all uppercase tracking-wide;
+  border: 3px solid #000000;
+  box-shadow: var(--shadow-neo);
+}
+
+.neo-button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-neo-lg);
+}
+
+.neo-button:active {
+  transform: translate(2px, 2px);
+  box-shadow: var(--shadow-neo-sm);
 }

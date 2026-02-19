@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 Viral Mind
 
-## Getting Started
+**Viral Mind** is an AI-powered content strategy engine engineered to maximize organic reach and viewer retention on YouTube and Facebook. 
 
-First, run the development server:
+Unlike generic AI writers, **Viral Mind** acts as a "Click Engineer," generating cinematic hooks, psychologically-driven titles, and engagement-focused descriptions designed to trigger algorithmic growth.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Key Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Algorithmic Strategy Generation**: Creates platform-specific tactics (YouTube vs Facebook) optimized for retention and clicks.
+- **Cinematic Titles**: Generates titles with high emotional impact using proven viral structures (e.g., "The Price of...", "What No One Saw...").
+- **Engagement Hooks**: diverse description styles that end with "stance-inviting" questions to provoke comments.
+- **Neobrutalist UI**: A high-contrast, bold interface designed for rapid workflow and clarity.
+- **Strict JSON Output**: Robust backend parsing ensures data integrity and consistent formatting.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: Next.js 14 (App Router)
+- **Styling**: Tailwind CSS v4 (Neobrutalism)
+- **AI**: Google Gemini API (`gemini-2.5-flash`)
+- **Database**: Supabase (Strategy History)
+- **Icons**: Lucide React
 
-## Learn More
+## 📦 Installation
 
-To learn more about Next.js, take a look at the following resources:
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/viral-mind.git
+    cd viral-mind
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3.  Set up environment variables (`.env.local`):
+    ```env
+    GEMINI_API_KEY=your_gemini_api_key
+    NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+    NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_key
+    ```
 
-## Deploy on Vercel
+4.  Run the development server:
+    ```bash
+    npm run dev
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🤝 Contribution
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License.
