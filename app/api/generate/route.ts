@@ -54,6 +54,7 @@ DESCRIPCIÓN FACEBOOK (EMOCIONAL & VIRAL)
 ----------------------------------------------------
 ESTRATEGIA DE HASHTAGS
 ----------------------------------------------------
+- OBLIGATORIO: Todos los hashtags deben estar en minúsculas (ej: #tecnologia, no #Tecnologia).
 - YOUTUBE: 5 a 8 máximo. (1 amplio, 3 medianos, 2-3 nicho). Incluir #Shorts si aplica.
 - FACEBOOK: 3 a 5 máximo. Mezcla: 1 amplio, 2 medianos, 1 nicho.
 
